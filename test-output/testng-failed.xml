@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test - Suite]">
+  <test thread-count="5" name="testing new page(failed)">
+    <classes>
+      <class name="tests.InvListPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="selectBy"/>
+          <include name="delete"/>
+        </methods>
+      </class> <!-- tests.InvListPageTest -->
+      <class name="tests.AddInvoiceTest">
+        <methods>
+          <include name="fillInvoiceContent"/>
+          <include name="SetUp"/>
+          <include name="saveNewInvoice"/>
+          <include name="tearDown"/>
+          <include name="fillInvoiceForm"/>
+        </methods>
+      </class> <!-- tests.AddInvoiceTest -->
+      <class name="tests.BusinessListTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="isAdded"/>
+        </methods>
+      </class> <!-- tests.BusinessListTest -->
+    </classes>
+  </test> <!-- testing new page(failed) -->
+</suite> <!-- Failed suite [Test - Suite] -->
